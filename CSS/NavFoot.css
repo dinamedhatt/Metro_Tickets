@@ -1,0 +1,108 @@
+body{
+    margin: 0px;
+    font-size: 25px;
+}
+
+/*NAV BAR*/
+#logiNav
+{
+    background-color: #363434;
+    text-align: right;
+    padding-bottom: 7px;
+    padding-right: 31px;
+}
+
+.btn
+{
+    /* border-radius: 10px; */
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    /* box-shadow: 0px 5px 10px 10px gray; */
+    cursor: pointer;
+}
+
+#logBtn{
+    border-right: 1px solid lightgray;
+    padding: 0px 16px 0px 16px;
+    border-radius: 0px;
+}
+
+
+.btn:hover
+{
+    color: #eaa029;
+    
+}
+
+#Trips
+{
+    border: none;
+}
+
+.navv{
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid #eaa029;
+    margin: -3px;
+    padding: 10px 34px 20px 34px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    top: -25px;
+    text-align: center;    
+    cursor: pointer;
+}
+.navv:hover
+{
+    background-color: whitesmoke;
+    color: #eaa029;
+}
+
+
+#logo{
+    width: 110px;
+    margin-top: 4px;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+#nav
+{
+    position: sticky;
+    top:0;
+    width:100%;
+    background-color: white;
+    border-bottom: 1px solid #eaa029;
+    box-shadow: 0px 2px 11px 3px grey;
+}
+
+#footer
+{
+    background-color: #363434;
+    text-align: center;
+    position: fixed;
+    /* left: 0; */
+    bottom: 0;
+    width: 100%;
+    color:white;
+    padding: 5px;
+    font-size: 18px;
+    display: block;
+}
+
+
+#name
+{
+    display: inline;
+    float: right;
+    margin: 23px;
+    padding: 1px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    cursor:default;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket</title>
+    <link rel="StyleSheet" href="/CSS/NavFoot.css">
+    <link rel="StyleSheet" href="/CSS/Ticket.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/JS/script/jQ-Dev.js"></script>
+    <script src="/JS/script/jquery-ui.js"></script>
+</head>
+
+<body onload="checkl();">
+    <div id="logiNav">
+        <input type="submit" value="Login" class="btn" id="logBtn" onclick="login()">
+        <input type="submit" value="Register" class="btn" id="regesterBTN" onclick="register()">
+        <input type="submit" value="Logout" class="btn" id="logoutBTN" onclick="logout()">
+    </div>
+
+    <div id="nav">
+        <img src="/img/takeit.jpeg" id="logo" onclick="home()">
+        <a id="home" class="navv" href="home.html">Home</a>
+        <a id="About" class="navv" href="about.html">About</a>
+        <a id="Profile" class="navv" onclick="check()">Profile</a>
+        <a id="Lines" class="navv" onclick="checkLinesBook()">Lines</a>
+        <a id="Trips" class="navv">Trips</a>
+        <h6 id="name" title='Welcome abroad!'></h6>
+    </div>
+    <div id="container">
+
+        <div id="ticketDiv">
+            <label>From Station: </label>
+            <span id="From"></span><br><br>
+
+            <label>To Station: </label>
+            <span id="To"></span><br><br>
+
+            <label>Price: </label>
+            <span id="price"></span>
+        </div>
+        <div id="buttonsss">
+            <input type="submit" value="Confirm" id="Confirm">
+            <input type="submit" value="Reset" id="back_To_Lines">
+            </div>
+    </div>
+
+        <div id="RecDiv">
+            <table>
+                <caption>Ticket Receipt</caption>
+            <tr>
+            <td><label>Number of Seats </label></td>
+            <td><span id="no_Seats"></span></td>
+           </tr>
+           <tr>
+            <td><label>Total Price </label></td>
+            <td><span id="TotalP"></span></td>
+            </tr>
+            </table>
+
+            <span id="Code"></span><br><br>
+        </div>
+
+
+    <div id="footer">
+        Copyrights 2020 &copy All Rights Reserved.
+    </div>
+
+    <script src="/JS/script/Cookies.js"></script>
+    <script src='/JS/profile.js'></script>
+    <script src="/JS/Ticket.js"></script>
+</body>
+
+</html>

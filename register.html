@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="StyleSheet" href="/CSS/NavFoot.css">
+    <link rel="StyleSheet" href="/CSS/login.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/JS/script/jQ-Dev.js"></script>
+    <script src="/JS/script/jquery-ui.js"></script>
+    <script src="/JS/script/Cookies.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    
+    <div id="logiNav">
+        <input type="submit" value="Login" class="btn" id="logBtn" onclick="login()">
+        <input type="submit" value="Register" class="btn" id="regesterBTN" onclick="register()">
+    </div>
+
+    <div id="nav">
+        <img src="/img/takeit.jpeg" id="logo" onclick="home()">
+        <a id="home" class="navv" href="home.html">Home</a>
+        <a id="About" class="navv"href="about.html">About</a>
+        <a id="Profile" class="navv"onclick="check()">Profile</a>
+        <a id="Lines" class="navv"onclick="checkLinesBook()">Lines</a>
+        <a id="Trips" class="navv"onclick="checkLoggedIn()">Trips</a>
+    </div>
+    <div id="Error" style="width: 100%;">
+        <h4 id="message" style="background-color:#f18585;;margin: 0px;padding: 1px; text-align: center;color: white;">
+            Please fill all inputs
+            <a class="fa fa-times" style="float: right;margin-right: 33px;cursor:pointer;" aria-hidden="true" id="xIcon" onclick="closeTab();"></a></h4>
+    </div>
+
+    <div id= "Form2">
+        <form>
+            <fieldset>
+                <legend>Register</legend>
+                <label for="UserName"  class='lbl'>Username</label>&nbsp;
+                <input type="text" id="username" name="Username" placeholder=" Please Enter Your Name.."  class='txtBox' required/><br><br>
+                
+                &nbsp;&nbsp;<label for="Email" class='lbl'>Email</label> &nbsp;&nbsp;&nbsp;
+                <input type="email" id="email" name="email" placeholder=" Please Enter Your Email.." class='txtBox' required/><br><br>
+                
+                <label for="Password" class='lbl'>Password</label>&nbsp;
+                <input type="password" id="Password" name="Password" placeholder=" Please Enter Your Password.." class='txtBox' required/><br><br>
+                
+                <label name="gender"class='lbl'>Gender </label>
+
+            <span id='genIcons'>
+                <span><input type="radio" id="UserGenderM" name="gender" value="Male">&nbsp;<i class="fas fa-mars"></i></span>
+                <span><input type="radio" id="UserGenderF" name="gender" value="Female">&nbsp;<i class="fas fa-venus"></i></span><br>
+            </span>
+                <input type="submit" value="Register" id="Btn2"/><br>
+                <img src="/img/trainred.gif" id="train2">
+            </fieldset>
+        </form> 
+    </div>
+
+    <div id="footer">
+        Copyrights 2020 &copy All Rights Reserved.
+    </div>
+
+    <script src="JS/login.js"></script>
+
+</body>
+</html>

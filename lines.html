@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lines</title>
+    <link rel="StyleSheet" href="/CSS/lines.css">
+    <link rel="StyleSheet" href="/CSS/NavFoot.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/JS/script/jQ-Dev.js"></script>
+    <script src="/JS/script/Cookies.js"></script>
+
+    </head>
+
+    <body onload="checkl()">
+        <div id="logiNav">
+            <input type="submit" value="Login" class="btn" id="logBtn" onclick="login()">
+            <input type="submit" value="Register" class="btn" id="regesterBTN" onclick="register()">
+            <input type="submit" value="Logout" class="btn" id="logoutBTN" onclick="logout()"> 
+        </div>
+    
+        <div id="nav">
+            <img src="/img/takeit.jpeg" id="logo" onclick="home()">
+            <a id="home" class="navv" href="home.html">Home</a>
+            <a id="About" class="navv"href="about.html">About</a>
+            <a id="Profile" class="navv" onclick="check()">Profile</a>
+            <a id="Lines" class="navv"onclick="checkLinesBook()">Lines</a> 
+            <a id="Trips" class="navv" onclick="checkTrip()">Trips</a>       
+            <h6 id="name" title='Welcome abroad!'></h6>
+        </div>
+        <div id="Error" style="width: 100%;">
+            <h4 id="message" style="background-color:#f18585;;margin: 0px;padding: 1px; text-align: center;color: white;">
+                Please select line and station
+                <a class="fa fa-times" style="float: right;margin-right: 33px;cursor:pointer;" aria-hidden="true" onclick="closeTab();"></a></h4>
+        </div>
+        
+    <div id='lineContainer'>
+
+    <!-- FROM DIV -->
+    <table id='linesTable'>
+        <tr><td>
+    <div id='fromDiv'>
+        <label id = "From">From</label>
+        <br><br>
+
+        <label for="FromLine">Line:</label><br>
+        <select name="Line" id="FromLine">
+                <option value="Please select">Please Select</option>
+        </select> 
+
+        <br><label for="FromStation">Station:</label><br>
+        <select name="Station" id="FromStation"></select> 
+
+    </div></td>
+<td>
+    <!-- TO DIV -->
+    <div id='toDiv'>
+        <label id = "To">To</label>
+        <br><br>
+        <label for="ToLine">Line:</label><br>
+        <select name="Line" id="ToLine"><br>
+                <option value="Please select">Please Select</option>
+        </select> 
+
+        <br><label for="ToStation">Station:</label><br>
+        <select name="Station" id="ToStation"></select> 
+    </div>
+</td></tr>
+</table> 
+
+    <div id='bookDiv'>
+        <input type="button" id='bookBtn' value="Get Your Seat" onclick="NumofStations()">
+    </div>
+
+        <div id="footer">
+            Copyrights 2020 &copy All Rights Reserved.
+        </div>
+    </div>
+        <script  src="/JS/lines.js"></script>
+        <script src='/JS/profile.js'></script>
+    </body>
+</html>

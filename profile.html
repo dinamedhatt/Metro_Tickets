@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="StyleSheet" href="/CSS/NavFoot.css">
+    <link rel="StyleSheet" href="/CSS/profile.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/JS/script/Cookies.js"></script>
+    <script src="/JS/script/jQ-Dev.js"></script>
+    
+    <title>Profile</title>
+</head>
+<body onload="checkl()">
+    <div id="logiNav">
+        <input type="submit" value="Login" class="btn" id="logBtn" onclick="login()">
+        <input type="submit" value="Register" class="btn" id="regesterBTN" onclick="register()">
+        <input type="submit" value="Logout" class="btn" id="logoutBTN" onclick="logout()"> 
+    </div>
+    <div id="nav">
+        <img src="/img/takeit.jpeg" id="logo" onclick="home()">
+        <a id="home" class="navv" href="home.html">Home</a>
+        <a id="About" class="navv"href="about.html">About</a>
+        <a id="Profile" class="navv"href="profile.html">Profile</a>
+        <a id="Lines" class="navv" onclick="checkLinesBook()">Lines</a>
+        <a id="Trips" class="navv" onclick="checkTrip();">Trips</a>
+        <h6 id="name" title='Welcome abroad!'></h6>
+    </div>
+
+
+    <table id="form_edit">
+        <tr>
+        <td class='editTable' ><div id='pimgDiv'><img src="/img/profile/profile.jpg" id="profileImg"></div></td>
+        <td class='editTable'><div id='profDiv'>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="Name" class="editLbl">Username </label></td>
+                    <td><input id="UserName" name="Name" type="text" class="textbx" disabled></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Email"class="editLbl">Email </label></td>
+                    <td><input id="UserEmail" name="Email" type="text" class="textbx" disabled></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Name"class="editLbl">Password </label></td>
+                    <td><input id="UserPassword" name="Password" type="password" class="textbx" disabled></td>
+                </tr>
+           </table>
+
+           <a class="fas fa-pencil-alt" onclick="edit()" id='editBtn'></a>
+           <a class="far fa-save" onclick="savee()" id='saveBtn'></a>
+        </form>
+    </td></tr></div>
+    </table>
+
+
+    <div id="footer">
+        Copyrights 2020 &copy All Rights Reserved.
+    </div>
+    <script src="/JS/profile.js"></script>
+    
+</body>
+</html>

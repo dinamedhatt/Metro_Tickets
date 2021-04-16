@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="StyleSheet" href="/CSS/NavFoot.css">
+	<link rel="StyleSheet" href="/CSS/seats.css">
+    <title>BOOKING</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/JS/script/jQ-Dev.js"></script>
+    <script src="/JS/script/jquery-ui.js"></script> 
+	
+	
+</head>
+<body>
+    <div id="logiNav">
+        <input type="submit" value="Login" class="btn" id="logBtn" onclick="login()">
+        <input type="submit" value="Register" class="btn" id="regesterBTN" onclick="register()">
+        <input type="submit" value="Logout" class="btn" id="logoutBTN" onclick="logout()"> 
+    </div>
+
+    <div id="nav">
+        <img src="/img/takeit.jpeg" id="logo" onclick="home()">
+        <a id="home" class="navv" href="home.html">Home</a>
+        <a id="About" class="navv"href="about.html">About</a>
+        <a id="Profile" class="navv" onclick="check()">Profile</a>
+        <a id="Lines" class="navv"onclick="checkLinesBook()">Lines</a>  
+        <a id="Trips" class="navv" onclick="checkTrip();">Trips</a>      
+        <h6 id="name" title='Welcome abroad!'></h6>
+    </div>
+    
+
+    <div id="book">
+		<div id="left" class="chair" class='seatDivs'>
+            <div class="imgDiv">
+		    <img src="/img/seats/9.png" class="status">
+			<img src="/img/seats/9.png" class="status">
+			<img src="/img/seats/9.png" class="status">
+			<img src="/img/seats/9.png" class="status">
+			<img src="/img/seats/9.png" class="status">
+            <img src="/img/seats/9.png" class="status">
+           </div>
+		<div class='arrowBtn'><i class="fas fa-angle-down"></i></div>
+        </div>
+        
+		<div id="mid" class='seatDivs'>
+		  <form>
+            <fieldset id="bookForm">
+                <legend>Book Seats</legend>
+                <label for="num" class='lbl'>Number of Seats</label><br>
+                <input type="number" id="num" name="num" min="1" step="1" max="12"
+					   placeholder=" Please Enter number of seats" class="txtBox" required><br><br>
+                
+                
+                   <input type="button" value="Book" class="Btn" onclick="bookNow()">
+				  
+                   <input type="button" value="Cancel" class="Btn" onclick="cancelBook()">
+
+            </fieldset>
+        </form>
+        <input type="button" value="View Ticket" id="ticketBtn">
+        </div>
+        
+		
+		<div id="right" class="chair" class='seatDivs'>
+            <div class="imgDiv">
+		    <img src="img/seats/8.png" class="status">
+			<img src="img/seats/8.png" class="status">
+			<img src="img/seats/8.png" class="status">
+			<img src="img/seats/8.png" class="status">
+			<img src="img/seats/8.png" class="status">
+            <img src="img/seats/8.png" class="status">
+        </div>
+        <div class='arrowBtn'><i class="fas fa-angle-down"></i></div>
+		</div>
+        
+    </div>
+    
+    
+    <div id="footer">
+        Copyrights 2020 &copy All Rights Reserved.
+    </div>
+  
+   <script src="/JS/script/Cookies.js"></script>
+   <script src='/JS/profile.js'></script>
+   <script src="/JS/seats.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+
+    <script src="/JS/script/jQ-Dev.js"></script>
+    <link rel="StyleSheet" href="/CSS/NavFoot.css">
+    <link rel="StyleSheet" href="/CSS/about.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/JS/script/Cookies.js"></script>
+    
+</head>
+<body>
+    <div id="logiNav">
+        <input type="submit" value="Login" class="btn" id="logBtn" onclick="login()">
+        <input type="submit" value="Register" class="btn" id="regesterBTN" onclick="register()">
+        <input type="submit" value="Logout" class="btn" id="logoutBTN" onclick="logout()"> 
+    </div>
+
+    <div id="nav">
+        <img src="/img/takeit.jpeg" id="logo" onclick="home()">
+        <a id="home" class="navv" href="home.html">Home</a>
+        <a id="About" class="navv"href="about.html">About</a>
+        <a id="Profile" class="navv"onclick="check();">Profile</a>
+        <a id="Lines" class="navv"onclick="checkLinesBook()">Lines</a>
+        <a id="Trips" class="navv"onclick="checkLoggedIn()">Trips</a>
+        <h6 id="name" title='Welcome abroad!'></h6>
+    </div>
+    
+
+    <!-- ABOUT US -->
+       <div id='about'>
+        <div id='headerDiv'><p id='headline'>Who Are We?</p></div>
+        <p id='para'><b>TAKE IT</b> is an online metro ticket booking system. 
+            It eases the booking process for citizens, as ticket booking queues can take long times, 
+            but with TAKE IT, you can have your ticket with a click!</p>
+       <a id='anchorBtn' href="#contact"><input type="button" id="aboutBtn" value="Contact Us"></a> 
+        </div> 
+
+
+    <!-- VALUES -->
+        <div id='values'>
+            <table>
+                <caption>OUR VALUES</caption>
+                <tr>
+                    <td class='icons'><img src='/img/icons/1.png'></td>
+                    <td class='icons'><img src='/img/icons/2.png'></td>
+                    <td class='icons'><img src='/img/icons/3.png'></td>
+                    <td class='icons'><img src='/img/icons/4.png'></td> 
+                </tr>
+
+                <tr>
+                    <td class='header'>PEOPLE</td>
+                    <td class='header'>INNOVATION</td>
+                    <td class='header'>TRUST & INTEGRITY</td>
+                    <td class='header'>QUALITY</td> 
+                </tr>
+
+                <tr>
+                    <td class='descrip'>Our main vision is to provide the best help and assistance to the people, and ease booking process for them.</td>
+                    <td class='descrip'>We provide our services by innovating and finding the best ways to use technology in our favor.</td>
+                    <td class='descrip'>The trust between us and our clients is our utmost value, as we maintain integrity in our serivces.</td>
+                    <td class='descrip'>We provide better quality that meets customers' standards and facilitate their needs in a better way.</td> 
+                </tr>
+            </table>
+        </div>
+
+       <!-- HISTORY -->
+      <div id="history">
+           <div id="his"> 
+          <p id="histitle">History of Cairo Metro</p>
+          <P id="hispara">As the biggest and most densely populated city in Africa, and the Arab World,
+               the case for a metro in Greater Cairo was strong. In 1987 that population stood 
+               at 10 million residents, not counting the two million or so commuters who came 
+               into Cairo every day to work.The capacity of Cairo's public transport
+                infrastructure was around 20,000 passengers/hour, which increased to 60,000 after
+                 the construction of the Metro. In 1990 a study was conducted for the future needs
+                  of the city and showed there was a need for about 8.4 million journeys by public
+                   transport and 2.7 million journeys by other modes, such as taxi and car. The actual 
+                   public transport capacity is 4.9 million journeys/day, 3.5 million short of the actual 
+                   requirement. This has led to a 50% increase in the number of taxis on the streets with 
+                   subsequent increases in traffic congestion in the cityThe construction of Line 1 started 
+                   in 1982 after the French government agreed on giving Egypt the necessary loan. 
+                 The first section was opened on 27 September 1987 and the
+                line was completed in  1989 connecting Helwan with El Marg and consisting of 
+                33 stations with a total length of 43 km of which 4.7 km underground.
+                 In 1999, New El Marg station was added to the northern end of the line,
+                  bringing its total length to 44.3 km. Helwan University station was built
+                   between Wadi Houf and Ain Helwan stations.
+                  Cairo's metro network was greatly expanded 
+                  in the mid-1990s with the building of Line 2,
+                   from Shoubra El Kheima to Cairo University,
+                    with an extension to Giza. The line includes
+                     the first tunnel under the Nile.
+               The construction of the line was finished 
+                in October 2000, and it was later extended 
+                to El Mounib. However, with current COVID-19 restrictions,
+                construction has halted indefinitely until further notice
+               from the Egyptian government. The Egyptian Transportation
+                Authority has declined to provide further information 
+                on rising construction costs.</P>
+                <input type="button" id="hisbtn" value="Read More"> </a>
+            </div>
+
+             <div id="gallery">
+            <table id="tableg">
+                <tr>
+                    <td><div id=flow><img class="hisimg" src="/img/history/1.1.jpg"></div></td>
+                    <td><div id=flow><img class="hisimg" src="/img/history/1.2.jpg"></div></td>
+                </tr>
+
+                <tr>
+                    <td><div id=flow><img class="hisimg" src="/img/history/2.1.jpg"></div></td>
+                    <td><div id=flow><img class="hisimg" src="/img/history/2.2.jpg"></div></td>
+                </tr>
+
+                <tr>
+                    <td><div id=flow><img class="hisimg" src="/img/history/3.1.jpg"></div></td>
+                    <td><div id=flow><img class="hisimg" src="/img/history/3.2.jpg"></div></td>
+                </tr>
+
+            </table>    
+           </div>    
+      </div>
+
+    <!-- CONTACT US -->
+    <div id='contact'>
+        <div id='headerDiv'><p id='contactHead'>CONTACT US!</p></div>
+        <p id='Cpara'>While we are good with air whistles and smoke signals, we would love to hear from you the easy way!</p>
+        <ul id="conList">
+            <li><a  href="tel:01020853338" class="fas fa-phone-alt"></a></li>
+            <li><a href="mailto:TAKEIT@gmail.com?Subject=Contacting TAKE IT" class="fas fa-envelope"></a> </li>
+            <li><a href="https://twitter.com/" class="fab fa-twitter" target="blank"></a> </li>
+            <li><a href="https://facebook.com/" class="fab fa-facebook-f" target="blank"></a> </li>
+            <li><a href="https://instagram.com/" class="fab fa-instagram" target="blank"></a> </li>
+        </ul>
+    </div>
+    <!-- FOOTER -->
+    </div>
+    <div id="footer">
+        Copyrights 2020 &copy All Rights Reserved.
+    </div>
+    <script src="/JS/about.js"></script>
+    <script src="/JS/profile.js"></script>
+</body>
+</html>

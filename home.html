@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="StyleSheet" href="/CSS/home.css">
+    <link rel="StyleSheet" href="/CSS/NavFoot.css">
+    <title>Home</title>
+
+    <script src="/JS/script/jQ-Dev.js"></script>
+    <script src="/JS/script/jquery-ui.js"></script>
+    <script src="/JS/script/Cookies.js"></script>
+</head>
+<body>
+    <div id="logiNav">
+        <input type="submit" value="Login" class="btn" id="logBtn" onclick="login()">
+        <input type="submit" value="Register" class="btn" id="regesterBTN" onclick="register()">
+        <input type="submit" value="Logout" class="btn" id="logoutBTN" onclick="logout()"> 
+    </div>
+
+    <div id="nav">
+        <img src="/img/takeit.jpeg" id="logo" onclick="home()">
+        <a id="Home" class="navv" href="home.html">Home</a>
+        <a id="About" class="navv"href="about.html">About</a>
+        <a id="Profile" class="navv" onclick="check()">Profile</a>
+        <a id="Lines" class="navv"onclick="checkLinesBook()">Lines</a> 
+        <a id="Trips" class="navv"onclick="checkLoggedIn()">Trips</a>       
+        <h6 id="name"  title='Welcome abroad!'></h6>
+    </div>
+    
+
+<!-- SLIDESHOW -->
+<div class="slideshow">
+    <div id='headerDiv'><p id="slideHead">NO QUEUES. NO WAIT.<br><span>"It's all about your comfort"</span></p></div>
+    <a id="anchorBtn" onclick="checkLinesBook()"><input type="button" id="slideBtn" value="Book Now"></a>
+</div>
+
+
+<!-- THREE DIVS -->
+<div id='divsContainer'>
+    <div id='aboutDiv'  class='divsGroup'>
+        <label class='divLbl'>About Us</label>
+        <p class='divPara'>
+            Take it is a onclick ticket booking system with high standards set
+             of values that easen booking process for users. <br><br>
+             <a href='about.html#values'>Learn more..</a></p>
+    </div>
+    <div id='linesDiv' class='divsGroup'>
+        <label class='divLbl'>Check our Lines</label>
+        <p class='divPara'>
+            You can book from and to any line you want, and the number of seats you may 
+            need for you and your company. <br><br>
+            <a onclick="checkLinesBook()">Learn more..</a></p>
+    </div>
+    <div id='contactDiv' class='divsGroup'>
+        <label class='divLbl'>Contact Us</label>
+        <p class='divPara'>What to know more about? Or reach us for any inquiries? Contact us 
+            on our email, or on our social media platforms.<br><br>
+            <a href='about.html#contact'>Learn more..</a></p>
+    </div>
+</div>
+
+
+<!-- History Section -->
+<div id='historySec'>
+    <div id='hisHead'>
+        <p>Cairo Metro History</p>
+    </div>
+    <div id='hisDescrip'>
+        <p>
+            As the biggest and most densely populated city in Africa, and the Arab World, the case for a metro in Greater 
+            Cairo was strong. In 1987 the capacity of Cairo's public transport infrastructure was around 20,000 passengers/hour, 
+            which increased to 60,000 after the construction of the Metro. In 1990 a study was conducted for the future needs of 
+            the city and showed there was a need for about 8.4 million journeys by public transport and 2.7 million journeys by 
+            other modes, such as taxi and car. 
+            <br>
+            <a href='about.html#history'><input type='button' value='Learn More'></a>
+        </p>
+    </div>
+</div>
+
+
+<!-- CONTACT FOR FEEDBACK -->
+<div id='feedback'>
+    <div id='mailDiv'>
+        <h1>Subscribe Now!</h1>
+
+    </div>
+
+    <div id='txtDiv'>
+        <label for='txtarea'>Leave us a message..</label><br>
+        <textarea cols="70" rows="7" name='txtarea' id='txtarea'> Hello TAKE IT..</textarea>
+    </div>
+    
+    <div id='fbBDiv'>
+    <button id="fbBtn">Send</button>
+    </div>
+</div>
+    
+    <div id="footer">
+        Copyrights 2020 &copy All Rights Reserved.
+    </div>
+
+    <script src="/JS/profile.js"></script>
+    <script src="/JS/home.js"></script>
+</body>
+</html>

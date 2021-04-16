@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trips</title>
+    <link rel="StyleSheet" href="/CSS/NavFoot.css">
+    <link rel="StyleSheet" href="/CSS/trips.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/JS/script/jQ-Dev.js"></script>
+    <script src="/JS/script/jquery-ui.js"></script>
+</head>
+
+<body onload="checkl();">
+    <div id="logiNav">
+        <input type="submit" value="Login" class="btn" id="logBtn" onclick="login()">
+        <input type="submit" value="Register" class="btn" id="regesterBTN" onclick="register()">
+        <input type="submit" value="Logout" class="btn" id="logoutBTN" onclick="logout()">
+    </div>
+
+    <div id="nav">
+        <img src="/img/takeit.jpeg" id="logo" onclick="home()">
+        <a id="home" class="navv" href="home.html">Home</a>
+        <a id="About" class="navv" href="about.html">About</a>
+        <a id="Profile" class="navv" onclick="check()">Profile</a>
+        <a id="Lines" class="navv" onclick="checkLinesBook()">Lines</a>
+        <a id="Trips" class="navv" href="trips.html">Trips</a>
+        <h6 id="name" title='Welcome abroad!'></h6>
+    </div>
+
+    <div id="container">
+        <table>
+            <caption>Current Trip info.</caption>
+            <tr>
+                <td><label>From:</label></td>
+                <td><span id="From"></span></td>
+            </tr>
+
+            <tr>
+                <td><label>To:</label></td>
+                <td><span id="To"></span></td>
+            </tr>
+
+            <tr>
+                <td><label>Time:</label></td>
+                <td><span id="time"></span></td>
+            </tr>
+
+            <tr>
+                <td><label>Price:</label></td>
+                <td><span id="TotalP"></span></td>
+            </tr>
+
+            <tr>
+                <td><label>Seats:</label></td>
+                <td><span id="no_Seats"></span></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="footer">
+        Copyrights 2020 &copy All Rights Reserved.
+    </div>
+
+    <script src="/JS/script/Cookies.js"></script>
+    <script src='/JS/profile.js'></script>
+    <script src="/JS/Ticket.js"></script>
+</body>
+
+</html>

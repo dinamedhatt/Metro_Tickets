@@ -1,0 +1,97 @@
+/* body{
+    background-image: url("/img/final.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+#container{
+    /* display:inline-block; */
+    float:left;
+    /* width:500px; */
+    text-align: center;
+    margin:160px 0px 0px 300px;
+}
+
+#RecDiv{
+    text-align: center;
+    float:left;
+    width:300px;
+    height: 400px;
+    background-color: #fce5c3;
+    padding:25px;
+    margin:80px 0px 0px 200px;
+}
+
+#RecDiv:after {
+    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    width: 125%;
+    height: 32px;
+    margin: -62px -26px;
+}
+
+#ticketDiv{
+    width:350px; 
+    margin: auto;
+    padding:25px;
+    margin-bottom: 50px;
+}
+
+td{padding:20px;}
+table{
+    border-bottom: 3px solid #eaa029; 
+    text-align: center;
+    /* padding-left:31px; */
+    margin:auto;
+}
+caption{
+    border-bottom: 3px solid #eaa029;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 0px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Code_paragraph
+{
+    color:rgb(37, 37, 37);
+    font-size: 21px;
+    line-height: 27px;
+    /* padding-right: 29px; */
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#codeNum{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#Confirm,#back_To_Lines
+{
+    width:120px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    color:rgb(44, 44, 44);
+    border: 2px solid #eaa029;
+    background-color:white;  
+    margin:15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 6px;
+}
+#Confirm:hover,#back_To_Lines:hover
+{
+    color:white;
+    background-color: #eaa029;
+}
+#buttonsss
+{
+    text-align: center;
+}
+
